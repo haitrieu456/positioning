@@ -1,28 +1,37 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html {
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+    background-image: url("../images/background.jpg");
+    /* background-color: lightgray; */
+    background-repeat: no-repeat;
+    background-size: 1900px 1080px;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
 }
 
 ::selection {
     color: #000; 
-    background: #ff0;
+    background: #a8e6cf;
 }
 
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #fff;
+    background: #dcedc1;
     line-height: 2.5em;
+    text-align: center;
+}
+
+/* adds google font to h1 for main pages */
+h1.page-header{
+    font-family: 'Tangerine' ,serif;
 }
 
 main.wrapper {
-    background-color: white;
+    background-color: #ffd3b6;
     overflow: auto;
 }
 
@@ -37,12 +46,12 @@ h2,h3 {
 }
 
 a {
-    color:darkcyan;
+    color:#e2bcba;
     text-decoration: none;
 }
 
 a:hover {
-    color: whitesmoke;
+    color: #f4b6bb;
     background-color: darkcyan;
     text-decoration: none;
 }
@@ -58,7 +67,7 @@ footer {
 /* DESKTOP */
 @media all and (min-width:1200px) {
     main.wrapper {
-        width: 80%;
+        width: 50%;
         margin: auto;
     }
     
